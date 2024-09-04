@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+}
+
+.intro, .additional-info {
+  font-family: Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+
+.name-intro {
+  font-family: Powerpuff Girls;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
