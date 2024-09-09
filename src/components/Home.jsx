@@ -1,21 +1,23 @@
 import React from "react";
 import "./Home.css";
+import myPic from './my_pic.jpg';
 
 export const Home = () => {
   return (
-    <div className="container">
+    <div className="container intro-wrapper">
       <div className="intro">
-        Hello, I am
-        </div>
-        <div className="name-intro">
-          Maymunah Hicks
-        </div>
-        <br />
+        <p>Hello, I am</p>
+        <div className="name-intro"><p>Maymunah Hicks</p></div>
         <div className="additional-info">
-        I am an aspiring software engineer who is passionate about learning and
-        taking on new challenges.<br /> Feel free to explore my projects. Thanks for
-        stopping by!
+          <p>I am an aspiring software engineer who is passionate about learning
+          and taking on new challenges.
+          <br /> Feel free to explore my projects. Thanks for stopping by!</p>
         </div>
+        <button className="contact-button">Contact Me</button>
+      </div>
+      <div className="photo">
+      <img src={myPic} alt="Maymunah Hicks" className="photo-style"/>
+      </div>
     </div>
   );
 };

@@ -2,18 +2,40 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   height: 100vh;
 }
 
 .intro, .additional-info {
-  font-family: Helvetica, sans-serif;
+  font-family: Montserrat semibold, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 27px;
+  width: 50%;
 }
 
 .name-intro {
   font-family: Powerpuff Girls;
   color: rgb(0, 0, 0);
   font-size: 30px;
+  
 }
+
+.intro-wrapper{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* .photo{
+  position: relative;
+  right: 20%;
+} */
+
+.photo-style{
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 3.5px solid black;
+}
+
