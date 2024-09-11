@@ -4,8 +4,8 @@ import myPic from './my_pic.jpg';
 
 export const Home = () => {
   return (
-    <div className="container intro-wrapper">
-      <div className="intro typing-effect">
+    <div className="intro-wrapper">
+      <div className="intro">
         <p>Hello, I am</p>
         <div className="name-intro"><p>Maymunah Hicks</p></div>
         <div className="additional-info">
