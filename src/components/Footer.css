@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 footer {
     font-size: 20px;
     background-color: black;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Montserrat semibold', 'Helvetica', 'sans-serif';
     color: white;
     text-align: center;
     position: fixed;
