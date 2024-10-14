@@ -1,58 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-@font-face {
-  font-family: "PowerPuffGirls";
-  src: local("PowerPuffGirls"), url("../../public/powerpuff_girls/powerpuff\ girls\ font.ttf") format("truetype");
-  font-weight: normal;
-}
-
-/* Other font formats include:
-'woff2', 'truetype, 'woff', 'embedded-opentype', and 'svg' */
-
-.intro-wrapper{
-  display: flex;
-  flex-direction: row;
+.intro-wrapper {
+  display: grid;
+  grid-template-areas: 
+            "a b"
+            "c b";
+  /* flex-direction: row; 
   justify-content: space-evenly;
+  align-items: center; Center vertically */
+  grid-template-columns: 1fr, 300px;
   margin: 100px 50px;
 }
-
-.intro, .additional-info {
-  font-family: 'Montserrat semibold', Helvetica, sans-serif;
+.intro {
+  grid-area: a;
+  font-family: 'Montserrat', Helvetica, sans-serif;
   color: rgb(0, 0, 0);
-  font-size: 27px;
-  width: 75%;
+  font-size: 20px;
+  width: 50%; /* Adjusted width for better layout */
+  min-width: 700px; /* Optional max-width to prevent overflow */
 }
 
-.additional-info {
-  font-family: 'Montserrat semibold', Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 27px;
+.about-me{
+  grid-area: c;
 }
 
-.name-intro {
-  font-family: 'PowerPuffGirls';
-  color: rgb(0, 0, 0);
-  font-size: 30px;
-}
 
 .photo {
-  width: 50%;
+  grid-area: b;
+  width: 50%; /* Adjusted width for better layout */
+  display: flex; /* Added flex display to center image */
+  justify-content: center; /* Center the photo */
+  min-width: 500px; /* Optional max-width to prevent overflow */
+
 }
 
+
 .photo-style {
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   border: 3.5px solid black;
 }
 
-.contact-button{
-  font-family: 'Montserrat semibold', Helvetica, sans-serif;
+.about-me-button {
+  font-family: 'Montserrat', Helvetica, sans-serif;
   font-size: 20px;
   padding: 15px 15px;
   border-radius: 15px;
   border: none;
   background-color: #FD90C7;
-  color:white;
+  color: white;
+  margin-top: 30px; /* Added margin for spacing */
+}
+
+.about-me-button:hover {
+  background-color: #fe6eb6;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  
+.intro-wrapper {
+  display: grid;
+  grid-template-areas: 
+            "b b"
+            "a a"
+            "c c"
+            
+            ;
+  /* flex-direction: row; 
+  justify-content: space-evenly;
+  align-items: center; Center vertically */
+  margin: 100px 50px;
+}
+
+.photo-style {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: 3.5px solid black;
+}
+
+.intro {
+  width: 50%; /* Adjusted width for better layout */
+  min-width: 75%; /* Optional max-width to prevent overflow */
+}
+
+
 }
