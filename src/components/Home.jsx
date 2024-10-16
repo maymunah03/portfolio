@@ -35,9 +35,7 @@ export const Home = () => {
   return (
     <div className="intro-wrapper">
       <div className="intro">
-        <h2 id="typed-text">
-          {/* Text will be typed here */}
-        </h2>
+        <h2 id="typed-text">{/* Text will be typed here */}</h2>
       </div>
       <div className="about-me">
         <Link to="/About">

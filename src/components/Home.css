@@ -83,7 +83,7 @@
     border-radius: 50%;
     border: 3.5px solid black;
   }
-   .photo {
+  .photo {
     min-width: 350px;
   }
   .intro-wrapper {
@@ -92,10 +92,6 @@
       "b b"
       "a a"
       "c c";
-    /* flex-direction: row; 
-  justify-content: space-evenly;
-  align-items: center; Center vertically */
-    margin: 100px 50px;
   }
 
   .intro {
@@ -106,6 +102,9 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .photo {
+    min-width: 350px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

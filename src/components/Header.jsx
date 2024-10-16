@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Header.css'; 
-import logo from './mhlogo.svg';
+import "./Header.css";
+import logo from "./mhlogo.svg";
 
 export const Header = () => {
   return (
     <nav>
       <div className="logo">
         <Link to="/">
-        <img src={logo} alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </Link>
       </div>
       <ul>
