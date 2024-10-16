@@ -24,6 +24,12 @@ nav a {
   font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+  nav {
+    width: 95vw;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     display: flex;
