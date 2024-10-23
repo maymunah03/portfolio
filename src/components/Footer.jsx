@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="footer-content">
         <div className="contact-info">
           <p>Maymunah Hicks</p>
-          <p>(704) 685-5241</p>
+          {/* <p>(704) 685-5241</p> */}
         </div>
         <div className="socials">
           <p>Connect with me:</p>
