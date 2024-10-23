@@ -1,1 +1,23 @@
-
+html, body, #root {
+    height: 100%; /* Ensures the whole page takes up the full height of the browser */
+    margin: 0; /* No extra margins */
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Stretch the page to the full height of the viewport */
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Make the main content area grow */
+  }
+  
+  .content {
+    flex: 1; /* Content fills available space */
+    min-height: calc(100vh - 50px); /* Adjust for footer height */
+    padding: 20px;
+  }
+  

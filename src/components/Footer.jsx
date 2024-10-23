@@ -10,28 +10,21 @@ export const Footer = () => {
           <p>(704) 685-5241</p>
         </div>
         <div className="socials">
-          <p>Follow me:</p>
+          <p>Connect with me:</p>
           <div className="social-icons">
             <a
-              href="https://facebook.com"
+              href="https://www.linkedin.com/in/maymunah-hicks-19aa08233/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/path/to/facebook-icon.png" alt="Facebook" />
+              <img src="/icons/linkedin.png" alt="LinkedIn" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://github.com/maymunah03"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/path/to/twitter-icon.png" alt="Twitter" />
-            </a>
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/path/to/instagram-icon.png" alt="Instagram" />
+              <img src="/icons/github.png" alt="GitHub"/>
             </a>
           </div>
         </div>
