@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+
+.wrapper {
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "a b";
+    grid-template-columns: 1fr, 500px;
+    margin: 50px;
+    ;
+}
+
+.about-coder {
+    grid-area: a;
+    width: 50%;
+    font-size: 20px;
+}
+
+.photo {
+    grid-area: b;
+    width: 100%;
+    min-width: 500px;
+    height: 400px;
+}
