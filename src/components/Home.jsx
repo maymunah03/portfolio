@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./Home.css";
-import myPic from "./my_pic.jpg";
-import pic1 from "./pic1.jpg";
-import pic2 from "./pic2.jpg";
+import myPic from "../images/my_pic.jpg";
+import pic1 from "../images/pic1.jpg";
+import pic2 from "../images/pic2.jpg";
 import { Link } from "react-router-dom";
 import Typed from "typed.js"; // Import Typed.js
 
