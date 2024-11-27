@@ -2,23 +2,23 @@ import React from 'react';
 import './About.css';
 
 const TextNavigater = ({ type, index, data, onHandleNext, onHandleBack }) => {
-	if (type === 'text') {
-		return (
-			<div>
-				<p>{data[index]}</p>
-				<button className='back-button' onClick={onHandleBack}>
-					Back
-				</button>
-				<button className='next-button' onClick={onHandleNext}>
-					Next
-				</button>
-			</div>
-		);
-	}
+  if (type === 'text') {
+    return (
+      <div>
+        <p>{data[index]}</p>
+        <button className='back-button' onClick={onHandleBack}>
+          Back
+        </button>
+        <button className='next-button' onClick={onHandleNext}>
+          Next
+        </button>
+      </div>
+    );
+  }
 
-	if (type === 'image') {
-		return <img src={data[index]} alt='Maymunah Hicks' />;
-	}
+  if (type === 'image') {
+    return <img src={data[index]} alt='Maymunah Hicks' />;
+  }
 
   return null;
 };
