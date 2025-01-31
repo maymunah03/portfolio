@@ -7,7 +7,7 @@ export const Footer = () => {
       <div className="footer-content">
         <div className="contact-info">
           <p>Maymunah Hicks</p>
-          {/* <p>(704) 685-5241</p> */}
+          <p>(704) 685-5241</p>
         </div>
         <div className="socials">
           <p>Connect with me:</p>
@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="subscribe">
-          <p>Subscribe to my blog</p>
+          <p>Subscribe to my blog:</p>
           <form>
             <input type="email" placeholder="Enter your email" />
             <button type="submit">Subscribe</button>

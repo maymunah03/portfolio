@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './About.css';
-import { aboutText, aboutImages } from '../data/about';
+import { aboutText, aboutImages, aboutTitle } from '../data/about';
 import ContentNavigator from './ContentNavigator';
 
 export const About = () => {
@@ -22,7 +22,7 @@ export const About = () => {
   return (
     <div className='wrapper'>
       <div className='about-coder'>
-        <h1>Coder.</h1>
+        <h1>{aboutTitle[currentIndex]}</h1>
         <ContentNavigator
           type='text'
           index={currentIndex}

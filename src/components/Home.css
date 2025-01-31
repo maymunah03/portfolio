@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
-
 .intro-wrapper {
   display: grid;
   grid-template-areas:
@@ -10,7 +8,7 @@
 }
 .intro {
   grid-area: a;
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: "Alice", "Cormorant", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 20px;
   width: 50%; /* Adjusted width for better layout */
@@ -18,45 +16,66 @@
   height: 300px;
 }
 
-.about-me {
-  grid-area: c;
+.name{
+  font-family: "Sacramento", "Alice", "Cormorant";
+  color:#fd90c7 ;
+  font-size: 35px;
 }
+
 
 .photo {
   grid-area: b;
   width: 100%; /* Adjusted width for better layout */
   display: flex; /* Added flex display to center image */
   justify-content: center; /* Center the photo */
-  min-width: 500px; /* Optional max-width to prevent overflow */
+  max-width: 500px; /* Optional max-width to prevent overflow */
   margin-bottom: 2em; /* Added margin for spacing */
 }
 
 .photo-style {
   width: 450px;
   height: 450px;
-  border-radius: 50%;
-  border: 3.5px solid black;
+  border-radius: 50%; 
+  border: 1.5px solid #EC368D;
 }
 
 .about-me-button {
-  font-family: "Montserrat", Helvetica, sans-serif;
+  grid-area: c;
+  font-family: "Cormorant", Helvetica, sans-serif;
   font-size: 20px;
   padding: 15px 15px;
   border-radius: 15px;
   border: none;
-  background-color: #fd90c7;
-  color: white;
-  margin-top: 30px; /* Added margin for spacing */
+  background-color: #ffb8d8;
+  color:black;
+}
+
+.view-mywork-button {
+  grid-area: c;
+  font-family: "Cormorant", Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 15px 15px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ffb8d8;
+  color: black;
+  margin-left: 20px;
 }
 
 .about-me-button:hover {
-  background-color: #fe6eb6;
+  background-color: #edc7ff;
+  cursor: pointer;
+}
+
+.view-mywork-button:hover {
+  background-color: #edc7ff;
   cursor: pointer;
 }
 
 #typed-text {
   width: 100%;
   max-width: 45vw; /* vw is viewport width */
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -78,7 +97,7 @@
     width: 100%;
     height: 80%;
     border-radius: 50%;
-    border: 3.5px solid black;
+    border: 1.5px solid #fd90c7;
   }
   .photo {
     min-width: 350px;

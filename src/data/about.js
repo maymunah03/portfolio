@@ -1,7 +1,9 @@
-import coder from "../images/coder.jpg";
-import coder2 from "../images/my_pic.jpg";
-import coder3 from "../images/pic1.jpg";
-import coder4 from "../images/pic2.jpg";
+import '../components/About.css';
+import picture1 from "../images/coding.JPG";
+import picture2 from "../images/tutoring.jpg";
+import picture3 from "../images/hiking.jpg";
+import picture4 from "../images/sewing.JPG";
+ 
 
 export const aboutText = [
 	"I was introduced to coding during my freshman year of college when I took a crash course on FreeCodeCamp. Ever since then, I've really enjoyed it. There's something amazing about seeing my ideas come to life on the screen. Plus, as a Black Muslim woman in the tech industry, I’m happy to represent diversity in this space. ",
@@ -11,8 +13,15 @@ export const aboutText = [
 ]
 
 export const aboutImages = [
-	coder,
-	coder2,
-	coder3,
-	coder4
+	picture1,
+	picture2,
+	picture3,
+	picture4
+]
+
+export const aboutTitle = [
+	"My Coding Journey",
+  	"Tutoring Experience",
+  	"Hiking Adventures",
+  	"Creative Hobbies"
 ]

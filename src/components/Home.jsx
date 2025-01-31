@@ -24,41 +24,52 @@ export const Home = () => {
     setCurrentImage(0); // Reset to the first image
   };
 
+
+  const firstTypedRef = useRef(null);
+  const secondTypedRef = useRef(null);
+
   useEffect(() => {
-    // Options for Typed.js
-    const options = {
+    const firstTyped = new Typed(firstTypedRef.current, {
       strings: [
-        "Hello,",
-        "My name is Maymunah Hicks.",
-        "I am an aspiring software engineer who is passionate about learning and taking on new challenges.",
-        "Click the button below to learn more about me. Thanks for stopping by!",
-      ],
+        'Hello. My name is <span class="name"> Maymunah Hicks</span><br>Welcome to my Portfolio!'],
       typeSpeed: 45,
-      backSpeed: 20,
+      showCursor: false,
+      startDelay: 1000,
       loop: false,
-      startDelay: 500, // Small delay before typing starts
-      backDelay: 1000, // Delay between strings
-      showCursor: true, // One blinking cursor for the whole typing
-      cursorChar: "|", // Customize the cursor character if you want
-    };
-
-    // Initialize Typed.js with one instance for all text
-    const typed = new Typed("#typed-text", options);
-
-    // Cleanup function to destroy the Typed instance
+      onComplete: () => {
+        // Start the second Typed instance when the first one is done
+        new Typed(secondTypedRef.current, {
+          strings: [
+            "I am an aspiring software engineer who is passionate about learning and taking on new challenges.",
+            "Click one of the buttons below to learn more about me. Thanks for stopping by :)"
+          ],
+          typeSpeed: 45,
+          backSpeed: 20,
+          backDelay: 1000,
+          loop: false,
+          showCursor: false,
+        });
+      }
+    });
+  
     return () => {
-      typed.destroy();
+      firstTyped.destroy();
     };
   }, []);
-
+  
+ 
   return (
     <div className="intro-wrapper">
       <div className="intro">
-        <h2 id="typed-text">{/* Text will be typed here */}</h2>
+        <h2 ref={firstTypedRef}>{/* First text will be typed here */}</h2>
+        <h2 ref={secondTypedRef}>{/* Second text will then be typed here.*/}</h2>
       </div>
       <div className="about-me">
         <Link to="/About">
           <button className="about-me-button">More about me</button>
+          <Link to="Projects">
+          <button className="view-mywork-button">View My Work</button>
+          </Link>
         </Link>
       </div>
       <div
