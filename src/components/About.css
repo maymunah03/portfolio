@@ -5,25 +5,31 @@
     grid-template-areas: 
     "a b"
     "a b";
-    grid-template-columns: 1fr, 500px;
+    grid-template-columns: 1fr, 300px;
     margin: 50px;
     ;
 }
 
-.about-coder {
+.about-text {
     grid-area: a;
     width: 50%;
     font-size: 20px;
     margin-left: 50px;
+    line-height: 1.5;
 }
 
-.photo {
+.about-photo img {
     grid-area: b;
-    width: 100%;
-    min-width: 500px;
+    width: 400px;
     height: 400px;
+    /* max-width: 500px;
+    max-height: 500px; */
     margin-right: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1.5px solid #EC368D;
 }
+
 
  h1 {
     text-align: center;
@@ -34,13 +40,13 @@
     padding: 15px 15px;
     border-radius: 15px;
     border: none;
-    background-color: #fd90c7;
+    background-color: #ffb8d8;
     color: white;
     margin-top: 30px; 
 }
 
 .back-button:hover {
-    background-color: #fe6eb6;
+    background-color: #edc7ff;
     cursor: pointer;
   }
 
@@ -49,13 +55,13 @@
     padding: 15px 15px;
     border-radius: 15px;
     border: none;
-    background-color: #fd90c7;
+    background-color: #ffb8d8;
     color: white;
     margin-top: 30px; 
     margin-left: 10px;
 }
 
 .next-button:hover {
-    background-color: #fe6eb6;
+    background-color: #edc7ff;
     cursor: pointer;
   }

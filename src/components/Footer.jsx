@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import SendEmail from "./SendEmail";
 
 export const Footer = () => {
   return (
@@ -7,7 +8,7 @@ export const Footer = () => {
       <div className="footer-content">
         <div className="contact-info">
           <p>Maymunah Hicks</p>
-          {/* <p>(704) 685-5241</p> */}
+          <p>(704) 685-5241</p>
         </div>
         <div className="socials">
           <p>Connect with me:</p>
@@ -29,11 +30,12 @@ export const Footer = () => {
           </div>
         </div>
         <div className="subscribe">
-          <p>Subscribe to my blog</p>
-          <form>
+          <p>Subscribe to my blog:</p>
+          {/* <form>
             <input type="email" placeholder="Enter your email" />
             <button type="submit">Subscribe</button>
-          </form>
+          </form> */}
+          <SendEmail />
         </div>
       </div>
     </footer>
