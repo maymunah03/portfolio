@@ -21,7 +21,7 @@ export const About = () => {
 
   return (
     <div className='wrapper'>
-      <div className='about-coder'>
+      <div className='about-text'>
         <h1>{aboutTitle[currentIndex]}</h1>
         <ContentNavigator
           type='text'
@@ -31,7 +31,7 @@ export const About = () => {
           onHandleBack={handleBack}
         />
       </div>
-      <div className='photo'>
+      <div className='about-photo'>
         <ContentNavigator
           type='image'
           index={currentIndex}

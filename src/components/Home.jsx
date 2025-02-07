@@ -31,7 +31,7 @@ export const Home = () => {
   useEffect(() => {
     const firstTyped = new Typed(firstTypedRef.current, {
       strings: [
-        'Hello. My name is <span class="name"> Maymunah Hicks</span><br>Welcome to my Portfolio!'],
+        'Hello. My name is <span class="name"> Maymunah Hicks\n</span> <br>Welcome to my Portfolio!'],
       typeSpeed: 45,
       showCursor: false,
       startDelay: 1000,
@@ -59,6 +59,8 @@ export const Home = () => {
   
  
   return (
+    <div className="home-container">
+    {/* Text Section */}
     <div className="intro-wrapper">
       <div className="intro">
         <h2 ref={firstTypedRef}>{/* First text will be typed here */}</h2>
@@ -68,10 +70,14 @@ export const Home = () => {
         <Link to="/About">
           <button className="about-me-button">More about me</button>
           <Link to="Projects">
-          <button className="view-mywork-button">View My Work</button>
+            <button className="view-mywork-button">View My Work</button>
           </Link>
         </Link>
       </div>
+    </div>
+  
+    {/* Image Section */}
+    <div className="photo-wrapper">
       <div
         className="photo"
         onMouseEnter={handleMouseHovers}
@@ -84,5 +90,6 @@ export const Home = () => {
         />
       </div>
     </div>
-  );
+  </div>
+  ) 
 };
