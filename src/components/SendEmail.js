@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import axios from "axios";
+import "./Footer.css";
 
 
 
@@ -47,7 +47,6 @@ return (
 
     <div>
 
-        <h2>Send an Email</h2>
 
         <input type="email" name="to" placeholder="Recipient Email" onChange={handleChange} />
 

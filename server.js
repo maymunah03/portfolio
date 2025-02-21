@@ -24,9 +24,9 @@ app.post("/send-email", async (req, res) => {
 
     from: "maymunahhicks@icloud.com", // Must be a verified sender in SendGrid
 
-    subject,
+    subject: "Subscriber to my email.",
 
-    text,
+    text: "Thank you for subscribing to my email.",
   };
 
   try {
