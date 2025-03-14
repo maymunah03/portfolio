@@ -1,0 +1,68 @@
+/* Blog Page Styles */
+
+
+/* Title for the blog page */
+.blog-title {
+    font-family: "Sacramento", "Alice", "Cormorant"; /* Same cursive font */
+    color: #fd90c7; /* Pink color */
+    font-size: 40px; /* Larger size */
+    text-align: center; /* Center it */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+/* Container for blog content */
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for blog posts */
+    gap: 20px; /* Space between blog posts */
+    justify-content: center; /* Centers the content */
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Blog post card style */
+  .blog-card {
+    background-color: #f4f4f4; /* Light background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: "Cormorant", Helvetica, sans-serif;
+    color: #444;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Styling for the blog title */
+  .blog-card h3 {
+    font-family: "Sacramento", "Alice", "Cormorant";
+    color: black;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for the blog content */
+  .blog-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+  }
+  
+  /* Hover effect on blog card */
+  .blog-card:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  /* Responsive Design for Blog Page (Stack posts vertically on smaller screens) */
+  @media only screen and (max-width: 768px) {
+    .blog-container {
+      grid-template-columns: 1fr; /* Stack items vertically */
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .blog-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for medium-sized screens */
+    }
+  }
+  
