@@ -1,0 +1,77 @@
+/* Projects Page Styles */
+
+/* Title for the projects page */
+.project-title {
+    font-family: "Sacramento", "Alice", "Cormorant"; /* Same cursive font */
+    color: #fd90c7; /* Pink color */
+    font-size: 40px; /* Larger size */
+    text-align: center; /* Center it */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  /* Container for project content */
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for project cards */
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Project card style */
+  .project-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: "Cormorant", Helvetica, sans-serif;
+    color: #444;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  /* Styling for the project title */
+  .project-card h3 {
+    font-family: "Alice", "Cormorant";
+    color: black;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Styling for the project description & technologies */
+  .project-card p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+  }
+  
+  /* Styling for the project link */
+  .project-card a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Hover effect on project card */
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    .project-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .project-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

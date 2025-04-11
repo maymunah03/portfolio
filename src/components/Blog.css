@@ -33,9 +33,9 @@
   
   /* Styling for the blog title */
   .blog-card h3 {
-    font-family: "Sacramento", "Alice", "Cormorant";
+    font-family: "Alice", "Cormorant";
     color: black;
-    font-size: 28px;
+    font-size: 22px;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -52,6 +52,26 @@
   .blog-card:hover {
     transform: translateY(-5px); /* Slight lift effect */
   }
+
+  .blog-toggle {
+    background-color: #fd90c7;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-top: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .blog-toggle:hover {
+    background-color: #e277b2;
+  }
+  
   
   /* Responsive Design for Blog Page (Stack posts vertically on smaller screens) */
   @media only screen and (max-width: 768px) {

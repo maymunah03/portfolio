@@ -5,7 +5,7 @@ const cors = require("cors");
 const sgMail = require("@sendgrid/mail");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 

@@ -54,4 +54,34 @@ app.post("/api/blogs", async (req, res) => {
 
 const PORT = process.env.PORT || 5001;
 
+const ProjectSchema = new mongoose.Schema({
+  name: String,
+  description: String,
+  technologies: [String],
+  link: String,
+  createdAt: { type: Date, default: Date.now },
+});
+
+const Project = mongoose.model("Project", ProjectSchema);
+
+app.get("/api/projects", async (req, res) => {
+  try {
+    const projects = await Project.find();
+    res.json(projects);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch projects" });
+  }
+});
+
+app.post("/api/projects", async (req, res) => {
+  try {
+    const { name, description, technologies, link } = req.body;
+    const newProject = new Project({ name, description, technologies, link });
+    await newProject.save();
+    res.json(newProject);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to add project" });
+  }
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
